@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.status(200).json({ success: true, msg: "Show all courses" });
+  res.status(200).json({ success: true, msg: "Show all trainings" });
 });
 router.get("/:id", (req, res) => {
   res.status(200).json({ success: true, msg: `Get course ${req.params.id}` });
