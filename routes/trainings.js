@@ -8,7 +8,7 @@ router.get("/:id", (req, res) => {
   res.status(200).json({ success: true, msg: `Get course ${req.params.id}` });
 });
 router.post("/", (req, res) => {
-  res.status(200).json({ success: true, msg: "Create new course" });
+  res.status(201).json({ success: true, msg: "Create new course" });
 });
 router.put("/:id", (req, res) => {
   res
@@ -17,7 +17,7 @@ router.put("/:id", (req, res) => {
 });
 router.delete("/:id", (req, res) => {
   res
-    .status(200)
+    .status(204)
     .json({ success: true, msg: `Delete course ${req.params.id}` });
 });
 
