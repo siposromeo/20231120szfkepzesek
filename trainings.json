@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Trainings",
+    "dateExported": "2023-11-20T13:38:19.286Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "cf833fcd-f937-480f-8a25-aea9d889fe0d",
+            "colId": "a3ff03df-b855-4c29-b38f-b4dda64a1049",
+            "containerId": "",
+            "name": "Get All The Trainings",
+            "url": "localhost:3000/api/trainings",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-20T13:08:04.144Z",
+            "modified": "2023-11-20T13:32:43.875Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4a1ae950-9a7a-4a17-aa7c-d9d9784ebbb5",
+            "colId": "a3ff03df-b855-4c29-b38f-b4dda64a1049",
+            "containerId": "",
+            "name": "Post a new training",
+            "url": "localhost:3000/api/trainings",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-20T13:13:28.051Z",
+            "modified": "2023-11-20T13:33:18.272Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\": 1\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e13a859f-7425-431a-b973-1a3cc0c0d427",
+            "colId": "a3ff03df-b855-4c29-b38f-b4dda64a1049",
+            "containerId": "",
+            "name": "PUT update a training",
+            "url": "localhost:3000/api/trainings/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-11-20T13:14:43.679Z",
+            "modified": "2023-11-20T13:33:23.504Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"_id\": 5\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d4a8a949-d092-4ffd-a41e-3f1587933775",
+            "colId": "a3ff03df-b855-4c29-b38f-b4dda64a1049",
+            "containerId": "",
+            "name": "Delete a training",
+            "url": "localhost:3000/api/trainings/5",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-20T13:15:34.003Z",
+            "modified": "2023-11-20T13:32:30.698Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "664d0733-000d-4832-a069-4aa543ddb788",
+            "colId": "a3ff03df-b855-4c29-b38f-b4dda64a1049",
+            "containerId": "",
+            "name": "GET Training by ID",
+            "url": "localhost:3000/api/trainings/1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-11-20T13:33:00.279Z",
+            "modified": "2023-11-20T13:33:06.228Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
