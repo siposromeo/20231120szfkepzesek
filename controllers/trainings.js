@@ -1,3 +1,5 @@
+const TrainingModel = require('../models/Training')
+
 // @desc   Get all trainings
 // @route  GET /api/trainings
 // @access Public
