@@ -83,4 +83,4 @@ const TrainingSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Training", TrainingSchema, "training");
+module.exports = mongoose.model("Trainings", TrainingSchema, "trainings");
