@@ -17,9 +17,13 @@ exports.getTraining = (req, res, next) => {
 // @desc   Create new training
 // @route  POST /api/trainings
 // @access Private
-exports.createTraining = (req, res, next) => {
-  console.log(req.body);
-  res.status(200).json({ success: true, msg: "Create new training" });
+exports.createTraining = async (req, res, next) => {
+  try {
+    const training = await Training.create(req.body);
+    res.status(201).json({ success: true, data: training });
+  } catch (error) {
+    res.status(400).json({ success: false });
+  }
 }; 
 
 // @desc   Update training
